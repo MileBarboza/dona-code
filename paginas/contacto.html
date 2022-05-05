@@ -1,54 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">			
+    <link rel="icon" href="img_donas/Logo.png">					
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
     <link rel="stylesheet" href="../css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <title>Contacto</title>
 </head>
-<body>
+<body class="fondo" >
 
-    <header>                                     <!--    Menú   -->   
-        <a href="/Index.html"><img src="../img_donas/Logo.png" alt="No hay Imagen" class="logo"></a>
-        <nav class="menu">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <a class="changuito" href="paginas/productos.html"><img src="/img_donas/shopping (filled).svg" ></a>
-                <img class="icono" src="../img_donas/menu (filled).svg">
-            </label>
-            <ul class="nav-menu">
-                <li><a href="/Index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="productos.html" id="chango" class="changuito"><img src="../img_donas/shopping (filled).svg" ></a></li>
-            </ul>
-        </nav>
+    <header>
+                                                          <!-- ----------------     BOOTSTRAP:   Nav Bar    ------------------ -->
+        <nav class="navbar navbar-expand-lg menu navbar-light  ">
+            <div class="container-fluid ">
+                <button class="navbar-toggler shadow-none border-0 " type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand logo" href="Index.html"><img src="/img_donas/Logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top"></a>
+                <a class="nav-link changuito2" href="paginas/productos.html"><span class="material-icons">shopping_cart</span></a>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item"><a class="nav-link" href="/Index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="contacto.html">Contacto</a></li>
+                        <li class="nav-item changuito"><a class="nav-link" href="productos.html"><span class="material-icons">shopping_cart</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>          <!-- --------------------------     BOOTSTRAP:   Nav Bar    ------------------------ -->
+
     </header>
     
         <main >    
                  
-           <section>
+           <section class="formulario">
                 <h3 class="contacto__titulo">ESCRIBINOS TU CONSULTA</h3>
                 
                 <form >
                     <label for="nombre">Nombre</label>
-                    <input type="text" class="field" required>
+                    <input type="text" class="campo" required>
      
                     <label for="correo">Correo</label>
-                    <input type="email" class="field" required>
+                    <input type="email" class="campo" required>
      
-                    <label for="mensaje">Mensaje</label>
-                    <textarea class="field" cols="35" rows="10"></textarea>
+                    <label for="Deja tu mensaje">Deja tu Mensaje</label>
+                    <textarea class="campo" cols="35" rows="10"></textarea>
      
                     <p class="center-content">
                         <input type="submit" class="boton_contact" value="ENVIAR">
                     </p>
                 </form>
             </section>
+            
+
 
             <div class="mapa"> 
                 <h3><img src="/img_donas/location.svg" alt=""> Mitre, San Carlos de Bariloche  </h3> 
@@ -57,7 +69,9 @@
         
         </main>
 
-    <footer >                        <!--   Pie de Pág   NOS UBICAMOS   --> 
+
+
+    <footer  >                        <!--   Pie de Pág   NOS UBICAMOS   --> 
         <div class="pie">
             <div class="footer__mapa"> 
                 <h3><img src="/img_donas/location.svg" alt=""> Mitre, San Carlos de Bariloche  </h3> 
@@ -66,7 +80,7 @@
     
             <div class="footer__contacto">
                 <a href="/Index.html"><img src="/img_donas/Logo.png" alt="No hay Imagen" class="logo__final"></a>
-                <h3> <img src="/img_donas/email.svg" alt="">    CONTACTANOS</h3>   
+                <h3> <img src="/img_donas/email.svg" alt=""> CONTACTANOS</h3>   
                 <p>Donitas@gmail.com</p>
                         
                 <div class="footer__hora">
@@ -83,6 +97,7 @@
                     <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="instagram"><img src="/img_donas/logo-Instagram.png" alt="" class="redes"></a>
                     <a href="https://www.pinterest.es/" target="_blank" class="pinterest"><img src="/img_donas/logo-Pinterest.png" alt="" class="redes"></a> 
                 </div>
+
             </div>            
         </div>                   
 
