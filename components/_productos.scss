@@ -1,0 +1,131 @@
+.titulo_producto {
+    text-align: center;
+    margin: 70px;
+    font-size: 3rem;
+}
+
+.conte {
+box-shadow: 0 10px  20px rgba(0, 0, 0, 0.1);
+border: 1px solid rgb(237, 232, 232);
+border-radius: 10px;
+width: 260px;            /*  16rem  h 31rem  valor Ancho del (padre)(seria del contenedor)*/   
+height: 500px; 
+display: flex;
+flex-direction: column;
+align-items: center;      /* es para q alinie a sus elemntos internos de acuerdo a sus ejes secundarios (el eje primario seria el Vertical, el eje secundario es Horizontal)*/                     
+justify-content: space-evenly;
+}
+
+.conte:hover {
+background-color: #fff7f7be;
+transform: scale(1.05) ;
+transition: all 0.3s;
+}
+
+.conte__img {
+width: 85%;        /*ocupa todo el ancho/espacio del (padre)*/
+line-height: 25px;
+margin: 20px;
+border-bottom: 1px solid rgb(231, 225, 225);
+}
+
+.conte__titulo {
+margin-bottom: 8px;
+text-align: center;
+}
+
+.descrip {
+text-align: center;
+line-height: 1.5rem;
+margin-bottom: 15px;
+width: 95%;
+font-size: 14px;
+}
+
+.valor {
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.productos {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+gap: 80px;
+}
+
+.boton__compra {
+text-align: center;
+background-color: rgb(201, 91, 115);
+padding: 4px 14px;
+color: #fff;
+border-radius: 15px;
+font-weight: bold;
+font-size: 20px;
+border: 1.5px solid rgb(188, 62, 89);
+transition: all 0.2;
+text-decoration: none;
+margin-bottom: 40px;
+}
+
+.boton__compra:hover {
+background-color: rgb(192, 52, 83);
+color: #fff;
+}
+
+.vermas {
+display: block;
+width: 140px;           /*para q no sea un bloque*/
+background-color: #e899a2;
+padding: 3px;
+color: #fff;
+border-radius: 20px;
+text-align: center;
+font-size: 1.5rem;
+font-weight: bold;
+border: 1.5px solid #c07780;
+margin: 30px auto  60px;
+transition: all 0.2;
+text-decoration: none;
+}
+
+.vermas:hover {
+background-color: #dc7984;
+color: #fff;
+}
+
+                  /* MUESTRA DE PORDUCTO */
+.pre2 {
+    display: none;
+}
+
+.mues {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 8%;
+    width: 100%;
+}
+/****************************************         RESPONSIVE       ***************************/
+@media screen and (max-width: 770px) {
+    .titulo_producto {
+        font-size: 2.5rem;
+        margin: auto;
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pre {
+    display: none;
+    }
+
+    .pre2 {
+    display: block;
+    }
+    
+    .conte {
+    margin: 50px auto;
+    }
+}

@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
-    <script src="../javascript/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.min.css">			
-    <link rel="icon" href="img_donas/Logo.png">					
+    <link rel="icon" href="../img_donas/Logo.png">					
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto</title>
@@ -21,7 +20,7 @@
                 <button class="navbar-toggler shadow-none border-0 " type="button " data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand logo" href="Index.html"><img src="/img_donas/Logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top"></a>
+                <a class="navbar-brand logo" href="/Index.html"><img src="/img_donas/Logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top"></a>
                 <a class="nav-link changuito2" href="paginas/productos.html"><span class="material-icons">shopping_cart</span></a>
     
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,7 +40,7 @@
     
         <main >    
                  
-           <section class="formulario">
+           <!-- <section class="formulario">
                 <h3 class="contacto__titulo">ESCRIBINOS TU CONSULTA</h3>
                 
                 <form >
@@ -59,7 +58,31 @@
                     </p>
                 </form>
             </section>
-            
+             -->
+            <section>
+                <h3 class="contacto__titulo">ESCRIBINOS TU CONSULTA</h3>
+                
+                <form class="formulario">
+                    <div class="mb-2">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control shadow-none" id="exampleFormControlInput1" required>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="exampleFormControlInput1 shadow-none" class="form-label">Email</label>
+                        <input type="email" class="form-control shadow-none" id="exampleFormControlInput1" required>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="exampleFormControlTextarea1" class="form-label">Deja tu Mensaje</label>
+                        <textarea class="form-control shadow-none" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="boton_contact shadow-none mt-2  btn btn-primary">Enviar</button>
+                </form>
+            </section>
+
+
 
 
             <div class="mapa"> 
@@ -79,7 +102,7 @@
             </div>
     
             <div class="footer__contacto">
-                <a href="/Index.html"><img src="/img_donas/Logo.png" alt="No hay Imagen" class="logo__final"></a>
+                <a href="/Index.html"><img src="../img_donas/Logo.png" alt="No hay Imagen" class="logo__final"></a>
                 <h3> <img src="/img_donas/email.svg" alt=""> CONTACTANOS</h3>   
                 <p>Donitas@gmail.com</p>
                         
@@ -97,13 +120,13 @@
                     <a href="https://www.instagram.com/?hl=es-la" target="_blank" class="instagram"><img src="/img_donas/logo-Instagram.png" alt="" class="redes"></a>
                     <a href="https://www.pinterest.es/" target="_blank" class="pinterest"><img src="/img_donas/logo-Pinterest.png" alt="" class="redes"></a> 
                 </div>
-
-            </div>            
+            </div>  
+                      
         </div>                   
 
              <h5  class="derecho_reservado"> Derechos Reservados 2022 &copy;</h5>
     </footer>
 
-
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
 </body>
 </html>

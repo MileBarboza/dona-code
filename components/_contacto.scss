@@ -1,0 +1,69 @@
+.formulario {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    box-shadow: 0 10px  20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+  }
+
+.contacto__titulo {
+    text-align: center;
+    margin: 50px 0px 30px;
+    font-weight: 600;
+}
+
+.form-control:hover {
+    border: 1px solid #cc5077  ;
+}
+
+form {
+    background-color: white;
+    border-radius: 7px;
+    font-size: 1em;           /*letra dentro del input*/
+    padding:20px 15px;
+}
+
+.campo:focus {           /*    cuando el mousse esta arriba cambia el color*/
+    border-color: #de4d7b;
+    outline: none;
+}
+
+.boton_contact {
+    font-weight: bold;
+    color: #fff;
+    background-color: #dc8096;
+    border: 1px solid #cc5077  ;
+    padding: 8px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.boton_contact:hover {
+    background-color: #c32859;
+}
+
+.boton_contact:active {
+    background-color: #c07780;
+    border: 1px solid #dc8096;
+}
+
+.mapa {
+    display: none;
+}
+
+
+/****************************************         RESPONSIVE       ***************************/
+
+@media screen and (max-width: 770px) {
+    .formulario{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mapa {
+        display: block;
+        margin:30px auto;
+        text-align: center;
+    }
+}

@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+}
+
+.fondo {
+    background-color: #f5eaea;
+}
+                                                        /* MENU */
+.menu {
+    background-color: rgb(253, 241, 238); 
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #c32859;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff5e91;
+    transition: .2s;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 10px;
+    color: #c32859;
+}
+
+.changuito2 {
+  display: none;
+  color: #c32859;
+}
+
+.changuito2:hover {
+    color: #ff5e91;
+    transition: .2s;
+}
+                                                /* PIE DE PÁGINA */
+.pie {
+    background-color: rgb(252, 240, 239);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 30px; 
+}
+.logo__final:hover {
+    transform: scale(1.09) ;
+    transform:  scale(1.09) rotate(2deg);
+}
+.footer__contacto h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer__hora {
+    margin-top: 30px ;
+    line-height: .8rem; 
+} 
+
+.footer__redes {
+    margin-bottom: 17px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.footer__redes--img {
+    display: flex;
+    justify-content: space-evenly;
+}
+.redes:hover {
+    transform: scale(2) ;
+    transform: translateY(-8px) scale(1.1);
+}
+
+.footer__mapa h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.redes {
+    width: 40px;
+    transition: all 0.4s ;
+
+}
+
+.logo__final {
+    width: 80px;
+    margin-bottom: 30px;
+    transition: all .5s;
+}
+
+.derecho_reservado {              
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+/***************************************          RESPONSIVE      ***********************/
+
+@media screen and (max-width: 991px) {
+    .changuito2 {
+       display: block;
+    }
+    
+    .changuito {
+       display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer__mapa {
+        display: none;
+    }
+
+    .footer__redes {
+        margin: 20px;
+    }
+
+    .footer__redes--img {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
