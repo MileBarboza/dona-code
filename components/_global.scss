@@ -15,97 +15,126 @@
 
 .logo {
     margin-left: 30px;
+    transition: all .5s;
+        &:hover {
+            transform: $transformacion;
+        }
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #c32859;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #ff5e91;
-    transition: .2s;
+    color: $colorPrimary;
+    padding:1.2rem 0 0 0 ;
+        &:hover {
+            color: $colorSecondary;
+            transition: .2s;
+        }
 }
 
 .nav-link {
-    font-weight: bold;
-    font-size: 1em;
     margin: 10px;
-    color: #c32859;
+    color: $colorPrimary;
+    @extend .fuentes
 }
 
 .changuito2 {
   display: none;
-  color: #c32859;
+  color: $colorPrimary;
+  animation: rubberBand 1s;
+        &:hover {
+            color: $colorSecondary;
+            transition: .2s;
+            animation: bounceOutRight  3s;
+        }
 }
 
-.changuito2:hover {
-    color: #ff5e91;
-    transition: .2s;
+.material-icons{
+    margin:-10px 2px;
+    animation: rubberBand 1s;
+        &:hover{
+            animation: rubberBand 1s;
+            animation: bounceOutRight 3s;
+        }
 }
                                                 /* PIE DE PÁGINA */
-.pie {
+.footer{
     background-color: rgb(252, 240, 239);
     text-align: center;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    padding: 25px 0 20px;
     border-radius: 10px;
     line-height: 30px; 
-}
-.logo__final:hover {
-    transform: scale(1.09) ;
-    transform:  scale(1.09) rotate(2deg);
-}
-.footer__contacto h3 {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
 
-.footer__hora {
-    margin-top: 30px ;
-    line-height: .8rem; 
-} 
+        &__pre p {
+            margin:0 10px 15px;
+        }
+        &__nav >h3,
+        &__contacto >h3 {
+            @extend .fuentes;
+        }
 
-.footer__redes {
-    margin-bottom: 17px;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.footer__redes--img {
-    display: flex;
-    justify-content: space-evenly;
-}
-.redes:hover {
-    transform: scale(2) ;
-    transform: translateY(-8px) scale(1.1);
-}
-
-.footer__mapa h3 {
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-.redes {
-    width: 40px;
-    transition: all 0.4s ;
-
+        &__hora >h3 {
+            @extend .fuentes;
+        } 
+        &__hora >p{
+            line-height: .8rem; 
+        }
+        
+        &__redes {
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+        }
 }
 
 .logo__final {
-    width: 80px;
-    margin-bottom: 30px;
+    width: 70px;
+    margin-bottom: 1rem;
     transition: all .5s;
+        &:hover {
+            transform: $transformacion;
+        }
 }
 
-.derecho_reservado {              
-    background-color: #000;
-    color: #fff;
+.redes {
+    width: 25px;
+    transition: all 0.4s ;
+    margin: 0  7px;
+        &:hover {
+            transform: scale(2) ;
+            transform: translateY(-8px) scale(1.1);
+        }
+}
+
+.nav-item {
+    line-height: .6rem;
+}
+
+.nav-link:hover {
+    color: $colorSecondary;
+    transition: .2s;
+}
+
+.derecho_reservado{              
+    background-color: $colorBlack;
+    font-size: .9rem;
+    color: $colorWhite;
     text-align: center;
     padding: 5px;
     margin: 0;
+}
+
+.fuentes {          // @extend 
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@mixin contenedor ($Display) {         //  @mixin
+    display: $Display;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 /***************************************          RESPONSIVE      ***********************/
@@ -119,17 +148,11 @@
        display: none;
     }
 }
-@media screen and (max-width: 600px) {
-    .footer__mapa {
-        display: none;
-    }
 
-    .footer__redes {
-        margin: 20px;
-    }
 
-    .footer__redes--img {
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
+
+
+
+
+
+    
