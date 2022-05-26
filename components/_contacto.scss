@@ -1,5 +1,5 @@
 .contacto {
-    margin-bottom: 90px;
+    margin-bottom: 0.1,7rem ;
 }
 
 .contacto__titulo {
@@ -17,12 +17,15 @@
 
 form {
     background-color: $colorWhite;
-    border-radius: 7px;
+    border-radius: 10px;
     padding:20px 15px;
 }
 
-.form-control:focus {           /*    cuando el mousse esta arriba cambia el color*/
-    border-color: $colorBorder;
+.form-control {
+    border-radius: 7px;
+        &:focus {           /*    cuando el mousse esta arriba cambia el color*/
+            border-color: $colorBorder;
+        }
 }
 
 .boton_contact {
@@ -42,8 +45,8 @@ form {
 
 .mapa {
      display: block;
-     margin:30px auto;
-     text-align: center;
+     margin: auto 0;
+     text-align: center;   
     }
 
 @media screen and (max-width: 770px) {

@@ -1,102 +1,98 @@
 .titulo_producto {
     text-align: center;
-    margin: 70px;
+    margin: 70px auto;
     font-size: 3rem;
 }
 
-.conte {
-box-shadow: 0 10px  20px rgba(0, 0, 0, 0.1);
-border: 1px solid rgb(237, 232, 232);
-border-radius: 10px;
-width: 260px;            /*  16rem  h 31rem  valor Ancho del (padre)(seria del contenedor)*/   
-height: 500px;          
-@include contenedor (flex);
-flex-direction: column;
+.cards {
+    margin: 0 0 80px;
+    padding: 0 7%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    gap: 40px;
+}
 
-    &:hover {
-    background-color: #fff7f7be;
-    transform: scale(1.05) ;
-    transition: all 0.3s;
-    }
-    
-    &__img {
-    width: 85%;        /*ocupa todo el ancho/espacio del (padre)*/
-    line-height: 25px;
-    margin: 20px;
-    border-bottom: 1px solid rgb(231, 225, 225);
-    }
-    
-    &__titulo {
-    margin-bottom: 8px;
-    text-align: center;
-    }
+.conte {
+    box-shadow: 0 10px  20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(237, 232, 232);
+    border-radius: 10px;
+    width: 260px;            /*  16rem  h 31rem  valor Ancho del (padre)(seria del contenedor)*/   
+    height: 500px;          
+    @include contenedor (flex);
+    flex-direction: column;
+        &:hover {
+        background-color: #fff7f7be;
+        transform: scale(1.05) ;
+        transition: all 0.3s;
+        }
+        
+        &__img {
+        width: 85%;        /*ocupa todo el ancho/espacio del (padre)*/
+        line-height: 25px;
+        margin: 20px;
+        border-bottom: 1px solid rgb(231, 225, 225);
+        }
+        
+        &__titulo {
+        margin-bottom: 8px;
+        text-align: center;
+        }
 }  
 
 .descrip {
-text-align: center;
-line-height: 1.5rem;
-margin-bottom: 15px;
-width: 95%;
-font-size: 14px;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+    width: 95%;
+    font-size: 14px;
 }
 
 .valor {
-font-size: 2rem;
-font-weight: bold;
-margin-bottom: 20px;
-}
-
-.productos {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-gap: 80px;
-}
-.container {
-    margin-bottom: 90px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .boton__compra {
-text-align: center;
-background-color: rgb(201, 91, 115);
-padding: 4px 14px;
-color: $colorWhite;
-border-radius: 15px;
-font-weight: bold;
-font-size: 20px;
-border: 1.5px solid rgb(188, 62, 89);
-transition: all 0.2;
-text-decoration: none;
-margin-bottom: 40px;
-
-    &:hover {
-    background-color: rgb(192, 52, 83);
+    text-align: center;
+    background-color: rgb(201, 91, 115);
+    padding: 4px 14px;
     color: $colorWhite;
-    }
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1.5px solid rgb(188, 62, 89);
+    transition: all 0.2;
+    text-decoration: none;
+    margin-bottom: 40px;
+
+        &:hover {
+        background-color: rgb(192, 52, 83);
+        color: $colorWhite;
+        }
 }
 
 .vermas {
-display: block;
-width: 140px;           /*para q no sea un bloque*/
-background-color: #e899a2;
-padding: 3px;
-color: $colorWhite;
-border-radius: 20px;
-text-align: center;
-font-size: 1.5rem;
-font-weight: bold;
-border: 1.5px solid #c07780;
-margin: 30px auto  60px;
-transition: all 0.2;
-text-decoration: none;
-
-    &:hover {
-    background-color: #dc7984;
+    display: block;
+    width: 140px;           /*para q no sea un bloque*/
+    background-color: #e899a2;
+    padding: 3px;
     color: $colorWhite;
-    }
-}
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1.5px solid #c07780;
+    margin: 30px auto  60px;
+    transition: all 0.2;
+    text-decoration: none;
 
+        &:hover {
+        background-color: #dc7984;
+        color: $colorWhite;
+        }
+}
                   /* MUESTRA DE PORDUCTO */
 .pre2 {
     display: none;
@@ -117,13 +113,13 @@ text-decoration: none;
     }
 }
 /****************************************         RESPONSIVE       ***************************/
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 627px) {
     .titulo_producto {
-        font-size: 2.5rem;
-        margin: auto;
-        padding: 40px;
+        font-size: 2.4rem;
+        margin: 60px auto;
     }
 }
+
 @media screen and (max-width: 600px) {
     .pre {
     display: none;
@@ -132,8 +128,8 @@ text-decoration: none;
     .pre2 {
     display: block;
     }
-    
-    .conte {
-    margin: 50px auto;
+
+    .conte2 {
+        margin: 40px auto;
     }
 }
